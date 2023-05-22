@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/ico" href="/icon.ico">
+    <link rel="stylesheet" href="/css/Contacto.css">
+    <!--link rayita responsives-->
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <a href="/WebBilboSKP.html" class="logo"> <img src="/img/Imagen6.png"  width="35" height="42">Bilbo SKP</a>
+        <div class="bx bx-menu" id="menu-icon"> </div>
+        <ul class="navbar">
+            <li><a href="/html/Informacion.html">Información general</a></li>
+            <li><a href="/html/Escapes.html">Escape Room Virtuales</a></li>
+            <li><a href="/html/Blog.html">Blog</a></li>
+            <li><a href="/html/Reservas.html">Reservas</a></li>
+            <li><a href="/html/Contacto.html">Contacto</a></li>
+        </ul>
+        <li>
+            <div class="dropdown">
+                <a href="#"><img src="/img/globo.png" width="30px" height="30px" style="filter: invert(1);"></a>
+                <div class="dropdown-content">
+                <a href="#">es</a>
+                <a href="#">eus</a>
+                </div>
+            </div>
+        </li>
+        <div class="header-btn">
+            <a href="/html/Login.html" class="in">Login</a>
+        </div>
+    </header>
+    <section class="contacto">
+        <div class="contenido">
+            <h2>Contáctanos</h2>
+            <p>Estamos siempre dispuestos a escuchar tus preguntas, comentarios y sugerencias. Si necesitas ponerte en contacto con nosotros, por favor rellena el  siguiente Formulario.</p>
+        </div>
+        <div class="contenedor">
+            <div class="contactoInfo">
+                <div class="caja">
+                    <div class="icon"> <ion-icon name="map"></ion-icon></div>
+                    <div class="texto">
+                        <h3> Dirección</h3>
+                        <p> Calle Licenciado Poza <br>
+                        Bizkaia, Bilbao <br>
+                        48010</p>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="icon"> <ion-icon name="call"></ion-icon></div>
+                    <div class="texto">
+                        <h3>Teléfono</h3>
+                        <p>673 89 32 34</p>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="icon"><ion-icon name="mail"></ion-icon></div>
+                    <div class="texto">
+                        <h3>Email</h3>
+                        <p> escapebilbo@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactoForm">
+                <form action="#"  id="form" method="post" onsubmit="enviarDatos(event)" >
+                    <h2>Envíanos un mensaje</h2>
+                    <div class="inputCaja">
+                        <input type="text" name="nombre"  id="name" required="required">
+                        <span> Nombre*</span>
+                    </div>
+                    <div class="inputCaja">
+                        <input type="text" name="email" id="email" required="required">
+                        <span> Email*</span>
+                    </div>
+                    <div class="inputCaja">
+                        <textarea name="mensaje" id="mensaje" required="required"></textarea>
+                        <span> Escribe tu Mensaje....</span>
+                    </div>
+                    <div class="inputCaja">
+                        <input type="submit" name="enviar"  id="button"  value="Enviar">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <ul class="icons">
+            <li><a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <div class="footer-copyright">
+            <p>Copyright @ 2023 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="module">
+        const btn = document.getElementById('button');
+
+    document.getElementById('form')
+    .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'Enviando...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_6sr22pa';
+
+    emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+        btn.value = 'Enviar';
+        alert('Mensaje enviado!');
+    }, (err) => {
+        btn.value = 'Enviar';
+        alert(JSON.stringify(err));
+    });
+});
+    </script>
+    <!--link javascript-->
+    <script src="/js/WbBilboSKP.js"></script>
+    <!--link iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('acjuFwTWaOcmRVi6c')
+    </script>
+    
+    
+</body>
+</html>

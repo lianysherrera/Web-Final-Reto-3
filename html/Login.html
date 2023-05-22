@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="icon" type="image/ico" href="/icon.ico">
+    <!--link rayita responsives-->
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="/WebBilboSKP.html" class="logo"> <img src="/img/Imagen6.png" width="35" height="42">Bilbo SKP</a>
+        <div class="bx bx-menu" id="menu-icon"> </div>
+        <ul class="navbar">
+            <li><a href="/html/Informacion.html">Información general</a></li>
+            <li><a href="/html/Escapes.html">Escape Room Virtuales</a></li>
+            <li><a href="/html/Blog.html">Blog</a></li>
+            <li><a href="/html/Reservas.html">Reservas</a></li>
+            <li><a href="/html/Contacto.html">Contacto</a></li>
+        </ul>
+        <li>
+            <div class="dropdown">
+                <a href="#"><img src="/img/globo.png" width="30px" height="30px" style="filter: invert(1);"></a>
+                <div class="dropdown-content">
+                <a href="#">es</a>
+                <a href="#">eus</a>
+                </div>
+            </div>
+        </li>
+        <div class="header-btn">
+            <a href="#" class="in">Login</a>
+        </div>
+    </header>
+    <section id="cajaLogin">
+        <h2>Login</h2>
+        <div class="form-box">
+                <form action="">
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Contraseña</label>
+                    </div>
+                    <div class="forget">
+                        <label id="lab" for=""> <input type="checkbox">Recuerdame<a href="#">He olvidado mi contraseña</a></label>
+                    </div>
+                    <div class="send">
+                        <input type="submit" value="Iniciar sesión"/>
+                    </div>
+                    <div class="register">
+                        <p>¿No tienes cuenta? <a href="/html/Registrar.html">Registrate</a></p>
+                    </div>
+                </form>
+        </div>
+    </section>
+    <!--link javascript-->
+    <script src="/js/WbBilboSKP.js"></script>
+    <!--link iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

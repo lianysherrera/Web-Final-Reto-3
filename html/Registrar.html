@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Registrar.css">
+    <link rel="icon" type="image/ico" href="/icon.ico">
+    <!--link rayita responsives-->
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Registrar</title>
+</head>
+<body>
+    <header>
+        <a href="/WebBilboSKP.html" class="logo"> <img src="/img/Imagen6.png" width="35" height="42">Bilbo SKP</a>
+        <div class="bx bx-menu" id="menu-icon"> </div>
+        <ul class="navbar">
+            <li><a href="/html/Informacion.html">Información general</a></li>
+            <li><a href="/html/Escapes.html">Escape Room Virtuales</a></li>
+            <li><a href="/html/Blog.html">Blog</a></li>
+            <li><a href="/html/Reservas.html">Reservas</a></li>
+            <li><a href="/html/Contacto.html">Contacto</a></li>
+        </ul>
+        <li>
+            <div class="dropdown">
+                <a href="#"><img src="/img/globo.png" width="30px" height="30px" style="filter: invert(1);"></a>
+                <div class="dropdown-content">
+                <a href="#">es</a>
+                <a href="#">eus</a>
+                </div>
+            </div>
+        </li>
+        <div class="header-btn">
+            <a href="/html/Login.html" class="in">Login</a>
+        </div>
+    </header>
+    <section>
+        <div class="form-box">
+            <h2>Registro</h2>
+                <form action="">
+                    <div id="caja1">
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Nombre:</label>
+                    </div>
+                    <div class="inputbox">
+                        
+                        <input type="text" required>
+                        <label for="">Apellido:</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Alias:</label>
+                    </div>
+                    </div>
+                    <div id="caja2">
+                    <div class="inputbox">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input type="" required>
+                        <label for="">Telefono:</label>
+                    </div>
+                    <div class="inputboxC">
+                        <p id="fechaNac">Fecha de nacimento:</p>
+                        <!--ion-icon name="calendar-clear-outline"></ion-icon-->
+                        <input type="date" required style="filter: invert(1); " id="in"> 
+                        <label for="" style="filter: invert(1)"></label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Contraseña:</label>
+                    </div>
+                </form>
+        </div>
+        <div id="caja3">
+            <div>Registrarse</div>
+        </div>
+    </section>
+
+
+    </header>
+
+
+
+
+
+
+    <!--link javascript-->
+    <script src="/js/WbBilboSKP.js"></script>
+    <!--link iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
