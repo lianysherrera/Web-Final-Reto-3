@@ -85,6 +85,11 @@ header{
     border-radius: 5px;
     transition: all .50s ease;
 }
+.header-btn .in:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-blanco-hueso);
+    color: var(--color-blanco-hueso);
+}
 ul,li{
     list-style: none;
 }
