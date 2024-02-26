@@ -188,50 +188,7 @@ main {
 h2 {
 	margin-bottom: 20px;
 }
-.bonos {
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: center;
-}
-.bono {
-	border: 1px solid #ccc;
-	margin: 10px;
-	padding: 20px;
-	text-align: center;
-	flex-basis: calc(25% - 20px);
-    border-radius: 20px;
-}
-.bono h3 {
-	margin-top: 0;
-    color: #fff;
-    margin-bottom: 8px;
-    font-family: 'Poppins', sans-serif;
-}
-.bono .precio {
-	font-size: 24px;
-	font-weight: bold;
-    color: #fff;
-	margin-bottom: 20px;
-}
-.bono button {
-	background-color: #e70909;
-	border: none;
-	color: white;
-	padding: 10px 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-    border-radius: 20px;
-}
-.bono button:hover{
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    font-size: 15px;
-}
+
 h1{
     top:30px;
     color: #fff;
@@ -248,10 +205,6 @@ section>p{
     margin-bottom: 54px;
     background-color: #f00;
     border-radius: 20px;
-}
-.parrafos{
-    display: flex;
-    justify-content: center;
 }
 
 /*titulo neon*/
@@ -290,7 +243,7 @@ h4 {
     padding-bottom: 70px;
     font-size: 2em;
     color: #fff;
-    margin-top: 90px;
+    margin-top: 25px;
 }
 h5{
     padding-top: 5%;
@@ -384,11 +337,6 @@ footer li{
 
 /*repsonsive firefox*/
 @media (min-width: 440px) and (max-width: 927px) {
-    .parrafos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     section>p{
         width: 80%;
         margin: 5%;
@@ -411,16 +359,7 @@ footer li{
     h4{
         padding-bottom: 20px;
     }
-    .bono h3{
-        font-weight: 500;
-        font-size: 100%;
-    }
-    .bono .precio{
-        font-size: 100%;
-    }
-    .bono{
-        width: 48%;
-    }
+
 }
 /*responsive chrome*/
 @media (min-width: 524px) and (max-width: 999px){
